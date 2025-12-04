@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takeaways</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: radial-gradient(circle at top, #2fe1ff 0%, #0e0f25 45%, #03010c 100%);
+      --panel: rgba(6, 8, 36, 0.85);
+      --accent: #64f4ff;
+      --accent-2: #fe6fff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 48px 20px 64px;
+      font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: #f5f7ff;
+      line-height: 1.6;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .grid {
+      display: grid;
+      gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto 48px;
+    }
+
+    .box {
+      background: var(--panel);
+      padding: 32px;
+      border-radius: 22px;
+      border: 2px solid rgba(255, 255, 255, 0.12);
+      box-shadow:
+        0 0 35px rgba(100, 244, 255, 0.25),
+        inset 0 0 30px rgba(255, 255, 255, 0.03);
+      position: relative;
+      isolation: isolate;
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    .box::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      padding: 2px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      z-index: -1;
+      opacity: 0.5;
+      filter: blur(6px);
+    }
+
+    .quote,
+    .reflection {
+      margin-bottom: 16px;
+      font-size: 1rem;
+      color: #fefefe;
+    }
+
+    .quote-title,
+    .reflection-title {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .work-cited {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: rgba(5, 9, 30, 0.8);
+      padding: 24px;
+      border-radius: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 25px rgba(254, 111, 255, 0.25);
+    }
+
+    .work-cited h3 {
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .work-cited p {
+      margin: 12px 0;
+      color: #d0d8ff;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>AAS 330 FInal Take Aways</h1>
+  <section class="grid">
+    <article class="box">
+      <h2>TAKEAWAY 1 — Immigrant’s Journey to the American Dream Is Lonely</h2>
+      <p class="quote">
+        <span class="quote-title">Quote:</span>
+        “I don’t belong anywhere, and I don’t belong in this society. I’m all alone” (The Lonely Water Buffalo).
+      </p>
+      <p class="reflection">
+        <span class="reflection-title">My Reflection:</span>
+        When I came to the USA in fifth grade, I felt very alone. People laughed at my accent, and I couldn’t speak English at all. I really felt like I didn’t belong here. That is why this quote feels exactly like what I went through. In AAS 330, many stories and plays talk about immigrant families dealing with pain, suffering, and losing things, just like Ma’s family. These things add to the loneliness. For me, the first two years in America were really hard. I had no friends, and I brought books because I knew they would keep me company. That is why this takeaway means something to me.
+      </p>
+    </article>
+
+    <article class="box">
+      <h2>TAKEAWAY 2 — It Is Hard for Immigrants to Balance Between Two Identities</h2>
+      <p class="quote">
+        <span class="quote-title">Quote:</span>
+        “I am Lee Sung Wei, not this Moy Fook Sing or whatever his name is! I am from Shekki not Sunning. I am a scholar, not a merchant’s son!” (Lim 14).
+      </p>
+      <p class="reflection">
+        <span class="reflection-title">My Reflection:</span>
+        When I came to the USA, I always had to hide some part of myself. With my Chinese family friends, I hid my American side. With my American friends, I hid my Chinese side. Even when choosing food, deep down I wanted Asian food, but because my American friends didn’t like those foods, I said “let’s go to Dick’s Burgers.” I did the same thing the other way around with my Asian friends.
+      </p>
+      <p class="reflection">
+        Lee’s line made me think about how he had to pretend to be someone he wasn’t. Even though my situation is different from his, I understand the feeling of trying to fit into a new place and worrying about how people see you. That is why this takeaway matters to me.
+      </p>
+    </article>
+
+    <article class="box">
+      <h2>TAKEAWAY 3 — Plays Reveal Emotion Better Than Plain Text</h2>
+      <p class="quote">
+        <span class="quote-title">Quote:</span>
+        “Emiko still holds the empty can. Offstage we hear Oka’s car start off. Accustomed to crying alone, she doesn’t utter a sound” (Yamauchi play 202).
+      </p>
+      <p class="reflection">
+        <span class="reflection-title">My Reflection:</span>
+        When me and my partner Jenny Chrin performed our scene, I understood how plays show emotion in a stronger way than plain text. When I performed Our Time in Linda Vista, I could act out Ma’s emotion. When the family went back to their house that was demolished, I could show how sorry and helpless they felt while picking up things quickly and leaving.
+      </p>
+      <p class="reflection">
+        In the play And the Soul Shall Dance, the staging made Emiko’s loneliness feel much stronger. The silence and her body language made her sadness more real. In the text version, we only read things like “They’ve left their home again Mrs. Oka is alone again” (Yamauchi 23), but we don’t feel the same emotion. The play lets us see the fights, the dancing, and the silence. For me, the play version feels more alive, and the text version feels more quiet. Both show the pain of immigrants, but in different ways.
+      </p>
+    </article>
+  </section>
+
+  <section class="work-cited">
+    <h3>Work cited:</h3>
+    <p>“The Lonely Water Buffalo.” Project Yellow Dress, Project Yellow Dress, https://www.projectyellowdress.com/the-lonely-water-buffalo.</p>
+    <p>Lim, Genny. Paper Angels. An Anthology of Plays by Asian American Women, edited by Roberta Uno, 1987.</p>
+    <p>Yamauchi, Wakako. “And the Soul Shall Dance.” Songs My Mother Taught Me: Stories, Plays, and Memoir, edited by Garret Hongo, The Feminist Press at the City University of New York, 1994.</p>
+  </section>
+</body>
+</html>
+
